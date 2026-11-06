@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El laboratorio de los sólidos misteriosos | Clasificación de enlaces</title>
+<style>
+:root{--bg:#0b1425;--panel:#122039;--panel2:#182a46;--line:#314362;--text:#edf4ff;--muted:#a8b8d2;--teal:#58d9c1;--blue:#79b4ff;--amber:#ffd18c;--red:#ff9898;--good:#83e2b1;--shadow:0 18px 48px #02091566;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 5% 0%,#17335c 0,transparent 33%),radial-gradient(circle at 85% 40%,#102b41 0,transparent 36%),var(--bg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);min-height:100vh}button,select,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.shell{max-width:1240px;margin:auto;padding:25px 20px 60px}.masthead{display:flex;gap:16px;align-items:center;justify-content:space-between;margin-bottom:22px}.eyebrow{font-size:.75rem;letter-spacing:.16em;color:var(--teal);font-weight:800;text-transform:uppercase}.masthead h1{font-size:clamp(1.85rem,3.8vw,3rem);line-height:1.1;margin:7px 0}.sub,.muted{color:var(--muted)}.sub{margin:6px 0}.tag{border:1px solid #496281;padding:7px 12px;border-radius:100px;font-size:.8rem;white-space:nowrap;background:#1c2c48}.panel{background:linear-gradient(160deg,#182a47ed,#122039ef);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.intro{padding:19px 23px;margin-bottom:18px}.intro p{margin:7px 0;color:var(--muted)}.pill{display:inline-block;background:#173f45;border:1px solid #4a8b88;color:#bcfff0;font-size:.75rem;padding:4px 10px;border-radius:99px;font-weight:750}h2{font-size:1.35rem;margin:0 0 12px}h3{font-size:1.03rem;margin:0 0 8px}.lab{display:grid;grid-template-columns:245px minmax(0,1fr);gap:16px}.side,.bench,.notebook,.assessment{padding:18px}.vials{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.vial{border:1px solid #506480;border-radius:13px;min-height:110px;background:linear-gradient(135deg,#203551,#16263e);color:var(--text);text-align:center;padding:11px 6px;user-select:none;transition:transform .15s,border-color .15s}.vial:hover,.vial:focus-visible{transform:translateY(-2px);border-color:var(--teal);outline:none}.vial.active{border:2px solid var(--teal);background:#184444}.jar{font-size:2rem;display:block}.vial strong{display:block}.vial small{display:block;color:var(--muted);font-size:.74rem}.hint{color:var(--muted);font-size:.84rem;margin:12px 0 0}.benchHead{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}.chip{font-size:.77rem;color:var(--amber);border:1px solid #785c37;background:#3b3024;border-radius:30px;padding:3px 10px}.machines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:15px}.machine{border:2px dashed #426081;background:#0c1b32;border-radius:16px;min-height:192px;padding:16px 12px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:.2s}.machine.over,.machine:focus-visible{border-color:var(--teal);background:#1b4148;outline:none}.machine.has-sample{border-style:solid;border-color:var(--teal)}.machine-icon{font-size:2.3rem;margin-bottom:4px}.machine p{font-size:.81rem;color:var(--muted);margin:4px 0 10px}.loaded-sample{display:flex;align-items:center;gap:8px;margin:7px 0 12px;padding:7px 12px;border:1px solid #58d9c1;border-radius:10px;background:#163b43;color:#dffff8;font-weight:750}.loaded-sample .jar{font-size:1.45rem}.loaded-sample.empty{border-style:dashed;border-color:#526b88;background:#10243c;color:#9eb3ce;font-weight:500}.primary,.secondary,.machine button{border-radius:10px;padding:10px 15px;font-weight:750}.primary{background:var(--teal);color:#082a2b;border:0}.primary:hover{background:#a0f2e3}.secondary,.machine button{background:#263d5c;color:var(--text);border:1px solid #486385}.secondary:hover,.machine button:not(:disabled):hover{background:#365472}.status{background:#0c192c;border:1px solid #3c5474;border-radius:12px;margin-top:15px;padding:13px 16px;min-height:76px}.status strong{color:var(--teal)}.status p{margin:5px 0 0;color:var(--muted)}.notebook,.assessment{margin-top:16px}.tablewrap{overflow:auto}.notebook table{border-collapse:collapse;width:100%;min-width:690px;font-size:.83rem;text-align:left}.notebook th,.notebook td{padding:11px 10px;border-bottom:1px solid #314461;vertical-align:top}.notebook th{background:#102038;color:#c3d6f2}.notebook td:first-child{font-weight:800;color:var(--teal)}.missing{color:#7186a3;font-style:italic}.assessment p{color:var(--muted)}.classification{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:16px 0}.classcard{border:1px solid #3b536f;background:#102038;border-radius:12px;padding:13px}.classcard strong{display:block;color:var(--teal);margin-bottom:10px}label{font-size:.84rem;color:#d9e8fa;font-weight:650;display:block;margin-bottom:5px}select{width:100%;background:#0b192d;color:var(--text);border:1px solid #5a7190;border-radius:9px;padding:9px 7px}select:focus{outline:2px solid var(--teal);outline-offset:2px}.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:16px}.feedback{margin-top:15px;padding:13px 15px;background:#303025;border:1px solid #80713d;border-radius:11px;color:#ffe7ae;white-space:pre-line}.feedback.ok{background:#173d36;border-color:#3eae8a;color:#bcffea}.hidden{display:none!important}.note{font-size:.82rem;color:#94a9c8}.foot{color:#90a8c4;font-size:.8rem;margin:20px 0}@media(max-width:900px){.lab{grid-template-columns:1fr}.vials{grid-template-columns:repeat(5,minmax(0,1fr))}.vial{min-height:92px}.classification{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:610px){.shell{padding:15px 12px 40px}.masthead{align-items:flex-start;flex-direction:column}.vials{grid-template-columns:repeat(3,1fr)}.machines{grid-template-columns:1fr}.machine{min-height:155px}.classification{grid-template-columns:repeat(2,minmax(0,1fr))}}@media print{body{background:white;color:black}.panel{background:white;box-shadow:none;color:black}.status,.classcard{background:white;color:black}.actions,.lab{display:none}.notebook th,.notebook td{color:black!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="masthead"><div><div class="eyebrow">Química IB · Estructura 2.1</div><h1>EL LABORATORIO DE LOS SÓLIDOS MISTERIOSOS</h1><p class="sub">Laboratorio virtual · Investiga sus propiedades y clasifica el tipo de enlace</p></div><span class="tag">VERSIÓN BREVE · EN ESPAÑOL</span></header>
+  <section class="panel intro"><span class="pill">Una sola fase · 15–25 minutos</span><p>Han llegado cinco muestras desconocidas, etiquetadas como <b>A, B, C, D y E</b>. Se sabe que son <b>cloruro de sodio (NaCl), óxido de magnesio (MgO), cloruro de calcio (CaCl₂), cobre (Cu) y sacarosa (C₁₂H₂₂O₁₁)</b>, pero todavía no se conoce qué etiqueta corresponde a cada sustancia.</p><p><b>Tu misión:</b> investiga las propiedades de cada muestra y decide si su tipo de enlace predominante es <b>iónico, covalente o metálico</b>. Arrastra una muestra hasta un aparato, espera a verla cargada y pulsa <b>Realizar prueba</b>. La muestra desaparecerá del aparato, pero el resultado quedará registrado.</p><p><b>Importante:</b> los resultados son <b>datos cualitativos simulados</b>. Los compuestos iónicos forman redes, no moléculas individuales; por eso hablamos de «sustancias» y «tipos de enlace».</p></section>
+  <div class="lab">
+    <aside class="panel side"><h2>Muestras</h2><div class="vials" id="samples"></div><p class="hint">Ordenador: arrastra una muestra. Móvil o tableta: selecciona una muestra y toca el aparato.</p><p class="hint" id="sampleSelected" aria-live="polite">Muestra seleccionada: ninguna</p></aside>
+    <section class="panel bench"><div class="benchHead"><h2>Estaciones de análisis</h2><span class="chip">Simulación · no se manipulan sustancias</span></div><div class="machines" id="machines"></div><div class="status" role="status" aria-live="polite" id="status"><strong>Laboratorio preparado</strong><p>Selecciona una muestra y elige una prueba.</p></div></section>
+  </div>
+  <section class="panel notebook"><h2>Cuaderno de laboratorio</h2><div class="tablewrap"><table><thead><tr><th>Muestra</th><th>Calentamiento / fusión</th><th>Conductividad del sólido</th><th>Solubilidad en agua</th><th>Conductividad tras añadir agua</th></tr></thead><tbody id="notebookBody"></tbody></table></div><p class="note">Los resultados se conservan en esta tabla. Una sola propiedad no siempre basta para justificar el tipo de enlace.</p></section>
+  <section class="panel assessment" id="assessment"><h2>Tu conclusión: ¿qué tipo de enlace presenta cada muestra?</h2><p>Elige el modelo de enlace predominante para cada sólido a partir de las observaciones. Para comprobar tus respuestas deberás haber realizado al menos una prueba con cada muestra y <b>10 pruebas en total</b>.</p><div class="classification" id="classification"></div><div class="actions"><button type="button" class="primary" id="check">Comprobar clasificación</button><button type="button" class="secondary" id="clear">Reiniciar actividad</button><span class="note" id="counter">Pruebas registradas: 0 de 20</span></div><div class="feedback hidden" role="status" aria-live="polite" id="feedback"></div><div class="feedback hidden ok" id="success"><strong>¡Clasificación completada!</strong><p>Has identificado correctamente el tipo de enlace predominante de las cinco muestras.</p><p><b>Razones clave:</b> los sólidos iónicos tienen iones inmóviles en la red, pero sus disoluciones pueden conducir por sus iones móviles. El cobre conduce en estado sólido gracias a electrones deslocalizados. La sacarosa se disuelve como moléculas neutras y su disolución no conduce apreciablemente.</p><p><b>Para pensar:</b> ¿por qué las muestras B y E no se pueden distinguir entre sí usando únicamente estos resultados cualitativos?</p></div></section>
+  <p class="foot">Actividad original para Química del IB · S2.1. Los datos son ilustrativos, no mediciones de laboratorio. Compatible con un archivo HTML único y GitHub Pages.</p>
+</main>
+<script>
+'use strict';
+const tests=[
+ {id:'melting',name:'Punto de fusión',icon:'🌡️',desc:'Calentar la muestra y observar su comportamiento.'},
+ {id:'solid',name:'Conductividad del sólido',icon:'⚡',desc:'Comprobar el paso de corriente en estado sólido.'},
+ {id:'water',name:'Solubilidad en agua',icon:'💧',desc:'Añadir agua y agitar cuidadosamente.'},
+ {id:'solution',name:'Conductividad en agua',icon:'🔌',desc:'Comprobar si la mezcla acuosa conduce electricidad.'}
+];
+const data={
+ A:{melting:'Punto de fusión muy elevado; permanece sólido en el intervalo simulado.',solid:'No conduce la electricidad en estado sólido.',water:'Muy poco soluble; gran parte permanece sin disolver.',solution:'No se obtiene una lectura fiable en esta prueba simplificada: se disuelve muy poca cantidad.'},
+ B:{melting:'Punto de fusión alto.',solid:'No conduce la electricidad en estado sólido.',water:'Se disuelve fácilmente en agua.',solution:'La disolución acuosa conduce la electricidad.'},
+ C:{melting:'Punto de fusión alto.',solid:'Conduce bien la electricidad en estado sólido.',water:'No se disuelve en agua.',solution:'No es aplicable: no se forma una disolución.'},
+ D:{melting:'Se descompone al calentarlo intensamente; no se observa una fusión estable.',solid:'No conduce la electricidad en estado sólido.',water:'Se disuelve en agua.',solution:'La disolución acuosa no conduce apreciablemente.'},
+ E:{melting:'Punto de fusión alto.',solid:'No conduce la electricidad en estado sólido.',water:'Se disuelve fácilmente en agua.',solution:'La disolución acuosa conduce la electricidad.'}
+};
+const correct={A:'ionico',B:'ionico',C:'metalico',D:'covalente',E:'ionico'};
+const observed=Object.fromEntries([...'ABCDE'].map(s=>[s,{}]));
+const loaded={melting:null,solid:null,water:null,solution:null};
+let selected=null;
+const $=id=>document.getElementById(id);
+function renderSamples(){
+ $('samples').innerHTML=[...'ABCDE'].map(s=>`<button type="button" class="vial ${selected===s?'active':''}" data-sample="${s}" draggable="true" aria-pressed="${selected===s}"><span class="jar" aria-hidden="true">🧪</span><strong>Muestra ${s}</strong><small>Sólido desconocido</small></button>`).join('');
+ $('samples').querySelectorAll('.vial').forEach(btn=>{
+  const s=btn.dataset.sample;
+  btn.addEventListener('click',()=>selectSample(s));
+  btn.addEventListener('dragstart',e=>{selectSample(s);e.dataTransfer.setData('text/plain',s);e.dataTransfer.effectAllowed='copy';});
+ });
+}
+function selectSample(s){selected=s;$('sampleSelected').textContent=`Muestra seleccionada: ${s}`;renderSamples();}
+function renderMachines(){
+ $('machines').innerHTML=tests.map(t=>`<div class="machine" data-test="${t.id}" tabindex="0" role="group" aria-label="${t.name}: selecciona una muestra y activa el aparato"><span class="machine-icon" aria-hidden="true">${t.icon}</span><strong>${t.name}</strong><p>${t.desc}</p><div class="loaded-sample empty" aria-live="polite" data-loaded="${t.id}">Arrastra una muestra aquí</div><button type="button" data-run="${t.id}" disabled>Realizar prueba</button></div>`).join('');
+ $('machines').querySelectorAll('.machine').forEach(el=>{
+  const id=el.dataset.test;
+  el.addEventListener('dragover',e=>{e.preventDefault();el.classList.add('over')});
+  el.addEventListener('dragleave',e=>{if(!el.contains(e.relatedTarget))el.classList.remove('over')});
+  el.addEventListener('drop',e=>{e.preventDefault();el.classList.remove('over');const s=e.dataTransfer.getData('text/plain');if(/^[A-E]$/.test(s))loadSample(s,id)});
+  el.querySelector('button').addEventListener('click',e=>{e.stopPropagation();runTest(id)});
+  el.addEventListener('click',e=>{if(e.target.closest('button'))return;if(selected)loadSample(selected,id)});
+  el.addEventListener('keydown',e=>{if(e.target===el&&(e.key==='Enter'||e.key===' ')){e.preventDefault();if(selected)loadSample(selected,id)}});
+ });
+}
+function loadSample(s,id){
+ loaded[id]=s;const station=$('machines').querySelector(`[data-test="${id}"]`);const slot=station.querySelector('[data-loaded]');
+ slot.classList.remove('empty');slot.innerHTML=`<span class="jar" aria-hidden="true">🧪</span><span>Muestra ${s} cargada</span>`;
+ station.classList.add('has-sample');station.querySelector('button').disabled=false;
+ $('status').innerHTML=`<strong>Muestra ${s} preparada</strong><p>Pulsa «Realizar prueba» para analizar esta muestra.</p>`;
+}
+function runTest(id){
+ const s=loaded[id];if(!s)return;
+ observed[s][id]=data[s][id];loaded[id]=null;
+ const station=$('machines').querySelector(`[data-test="${id}"]`),slot=station.querySelector('[data-loaded]');
+ slot.classList.add('empty');slot.textContent='Arrastra una muestra aquí';station.classList.remove('has-sample');station.querySelector('button').disabled=true;
+ $('status').innerHTML=`<strong>Muestra ${s} · ${tests.find(t=>t.id===id).name}</strong><p>${data[s][id]}</p>`;
+ updateNotebook();
+}
+function updateNotebook(){
+ $('notebookBody').innerHTML=[...'ABCDE'].map(s=>`<tr><td>${s}</td>${tests.map(t=>`<td>${observed[s][t.id]||'<span class="missing">Sin analizar</span>'}</td>`).join('')}</tr>`).join('');
+ const count=Object.values(observed).reduce((n,o)=>n+Object.keys(o).length,0);
+ $('counter').textContent=`Pruebas registradas: ${count} de 20`;
+}
+function renderClassification(){
+ $('classification').innerHTML=[...'ABCDE'].map(s=>`<div class="classcard"><strong>Muestra ${s}</strong><label for="class${s}">Tipo de enlace</label><select id="class${s}"><option value="">Seleccionar…</option><option value="ionico">Iónico</option><option value="covalente">Covalente</option><option value="metalico">Metálico</option></select></div>`).join('');
+}
+$('check').addEventListener('click',()=>{
+ const count=Object.values(observed).reduce((n,o)=>n+Object.keys(o).length,0);
+ const every=[...'ABCDE'].every(s=>Object.keys(observed[s]).length>0);
+ const fb=$('feedback');$('success').classList.add('hidden');
+ if(!every||count<10){fb.className='feedback';fb.textContent='Primero investiga: realiza al menos 10 pruebas distintas (muestra + aparato) y analiza cada una de las cinco muestras al menos una vez.';return;}
+ if([...'ABCDE'].some(s=>!$('class'+s).value)){fb.className='feedback';fb.textContent='Completa la clasificación de todas las muestras antes de comprobarla.';return;}
+ const wrong=[...'ABCDE'].filter(s=>$('class'+s).value!==correct[s]);
+ if(wrong.length){fb.className='feedback';fb.textContent=`Hay ${wrong.length} ${wrong.length===1?'clasificación que debes revisar':'clasificaciones que debes revisar'}. Consulta tu cuaderno y recuerda: la conductividad en estado sólido y la presencia de iones móviles son pistas muy útiles. Puedes repetir las pruebas.`;return;}
+ fb.classList.add('hidden');$('success').classList.remove('hidden');$('success').scrollIntoView({behavior:'smooth',block:'center'});
+});
+$('clear').addEventListener('click',()=>{
+ if(!window.confirm('¿Quieres borrar las observaciones y comenzar de nuevo?'))return;
+ for(const s of 'ABCDE')observed[s]={};for(const id of Object.keys(loaded))loaded[id]=null;
+ selected=null;renderSamples();renderMachines();renderClassification();updateNotebook();
+ $('sampleSelected').textContent='Muestra seleccionada: ninguna';$('status').innerHTML='<strong>Laboratorio preparado</strong><p>Selecciona una muestra y elige una prueba.</p>';
+ $('feedback').classList.add('hidden');$('success').classList.add('hidden');
+});
+renderSamples();renderMachines();renderClassification();updateNotebook();
+</script>
+</body>
+</html>
